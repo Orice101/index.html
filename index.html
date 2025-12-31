@@ -1,24 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aje Bright Global LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aje Bright Global LLC | Men • Women • Kids Apparel</title>
+  <meta name="description" content="Aje Bright Global LLC is a Texas-based Veteran-Owned apparel brand offering affordable, high-quality clothing for men, women, and kids. Abebi glem.." />
+
+  <style>
+    :root{
+      --bg:#f6fbfb;
+      --card:#ffffff;
+      --text:#0b1220;
+      --muted:#5b6b7a;
+      --brand:#0f766e;     /* teal */
+      --brand2:#1d4ed8;    /* blue */
+      --line:#e4eef0;
+      --radius:18px;
+      --shadow:0 10px 25px rgba(2,6,23,.06);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+
+    /* Header */
+    header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:240px}
+    .brand img{width:46px;height:46px;object-fit:contain;border-radius:12px;background:#fff;border:1px solid var(--line)}
+    .brand .name{font-weight:900;letter-spacing:.2px}
+    .pill{display:inline-block;margin-left:8px;padding:6px 10px;border-radius:999px;background:rgba(15,118,110,.10);color:var(--brand);font-size:12px;font-weight:800;border:1px solid rgba(15,118,110,.18)}
+    .sub{font-size:12px;color:var(--muted);font-weight:700;margin-top:2px}
+
+    .links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+    .links a{font-weight:800;text-decoration:none;padding:10px 12px;border-radius:12px}
+    .links a:hover{background:#eef8f7}
+
+    /* Hero */
+    .hero{padding:28px 0 10px}
+    .heroGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:stretch}
+    h1{margin:0 0 10px;font-size:40px;line-height:1.08}
+    p{margin:0;color:var(--muted);line-height:1.65}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:14px;text-decoration:none;font-weight:900;border:1px solid transparent}
+    .btn.primary{background:var(--brand);color:white}
+    .btn.ghost{background:white;border-color:#cfe3e0}
+    .btn.primary:hover{filter:brightness(.95)}
+    .btn.ghost:hover{background:#f2fbfa}
+
+    .logoBig{display:flex;align-items:center;justify-content:center}
+    .logoBig img{
+      width:100%;
+      max-width:520px;
+      height:auto;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:#fff;
+      padding:10px;
+    }
+
+    /* Sections */
+    .section{padding:20px 0}
+    .sectionTitle{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:10px}
+    .sectionTitle h2{margin:0;font-size:26px}
+    .sectionTitle small{color:var(--muted);font-weight:700}
+
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+    .product h3{margin:0 0 8px}
+    .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:900;color:var(--brand2);background:rgba(29,78,216,.08);border:1px solid rgba(29,78,216,.12);padding:6px 10px;border-radius:999px}
+
+    ul{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.6}
+
+    /* Footer */
+    footer{margin-top:18px;border-top:1px solid var(--line);background:white}
+    .foot{padding:16px 0;color:var(--muted);display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+    .social a{margin-right:10px;font-weight:900}
+    .note{margin-top:12px;font-size:13px;color:var(--muted);font-weight:700}
+
+    @media (max-width:920px){
+      .heroGrid{grid-template-columns:1fr}
+      .grid3{grid-template-columns:1fr}
+      .two{grid-template-columns:1fr}
+      h1{font-size:32px}
+      .brand{min-width:auto}
+    }
+  </style>
 </head>
-<body style="font-family:Arial, sans-serif; text-align:center; padding:40px;">
 
-  <img src="logo.jpg"
-       alt="Aje Bright Global LLC mermaid family logo - Abebi glem.."
-       style="max-width:300px; width:100%; height:auto;">
+<body>
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#home">
+        <img src="logo.jpg" alt="Aje Bright Global LLC mermaid family logo - Abebi glem.." loading="lazy" />
+        <div>
+          <div class="name">Aje Bright Global LLC <span class="pill">Veteran-Owned</span></div>
+          <div class="sub">Men • Women • Kids Apparel — Abebi glem..</div>
+        </div>
+      </a>
 
-  <h1>Aje Bright Global LLC</h1>
-  <p><strong>Affordable Style for Men, Women & Kids</strong></p>
-  <p>Veteran-Owned Apparel Brand — <em>Abebi glem..</em></p>
+      <nav class="links">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#policies">Policies</a>
+      </nav>
+    </div>
+  </div>
+</header>
 
-  <p style="margin-top:20px;">
-    📧 orice@ajebrightglobal.org<br>
-    📞 469-849-8222
-  </p>
+<main id="home">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="heroGrid">
+        <div class="card">
+          <h1>Affordable Style for Men, Women & Kids.</h1>
+          <p>
+            Inspired by water, nature, and the hidden treasures beneath the tide, <strong>Aje Bright Global LLC</strong>
+            delivers quality, value, and comfort for the whole family. Our mermaid-family emblem represents unity —
+            men, women, and kids dressed with confidence. <strong>Abebi glem..</strong>
+          </p>
 
+          <p style="margin-top:10px;">
+            We are a <strong>Texas-based Veteran-Owned apparel brand</strong> focused on affordable, high-quality clothing
+            for everyday life—built on integrity, service, and customer satisfaction.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#shop">Shop Now</a>
+            <a class="btn ghost" href="#contact">Place an Order</a>
+          </div>
+
+          <div class="note">🌊 Inspired by water • 💎 Built on value • 👕 Designed for families</div>
+        </div>
+
+        <div class="card logoBig">
+          <img src="logo.jpg" alt="Aje Bright Global LLC logo" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Best Sellers</h2>
+        <small>Popular picks customers love</small>
+      </div>
+
+      <div class="grid3">
+        <div class="card product">
+          <h3>Men’s Collection</h3>
+          <p>Modern, comfortable apparel for everyday wear, work, and casual outings.</p>
+          <span class="tag">Shop Men</span>
+        </div>
+
+        <div class="card product">
+          <h3>Women’s Collection</h3>
+          <p>Stylish and versatile pieces inspired by confidence, comfort, and elegance.</p>
+          <span class="tag">Shop Women</span>
+        </div>
+
+        <div class="card product">
+          <h3>Kids’ Collection</h3>
+          <p>Durable, fun, and affordable clothing designed to keep up with active kids.</p>
+          <span class="tag">Shop Kids</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="section">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Shop</h2>
+        <small>Men / Women / Kids / Collections</small>
+      </div>
+
+      <div class="two">
+        <div class="card">
+          <h3>Browse Our Collections</h3>
+          <ul>
+            <li><strong>Men:</strong> tees, casual wear, everyday essentials</li>
+            <li><strong>Women:</strong> stylish comfort, versatile outfits</li>
+            <li><strong>Kids:</strong> play-ready and school-ready clothing</li>
+            <li><strong>Collections:</strong> seasonal releases and curated sets</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="#contact">Order / Inquiry</a>
+            <a class="btn ghost" href="#policies">View Policies</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Collections Theme</h3>
+          <p>
+            Our styles are inspired by water, nature, and everyday living — built around comfort, durability,
+            and family unity. <strong>Abebi glem..</strong> reminds us that real value is the hidden treasure.
+          </p>
+          <div class="note">Want a real shop page? Add product photos + prices and we’ll upgrade again.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>About</h2>
+        <small>Veteran-owned • mission • quality promise</small>
+      </div>
+
+      <div class="two">
+        <div class="card">
+          <h3>Who We Are</h3>
+          <p>
+            <strong>Aje Bright Global LLC</strong> is a proudly <strong>Veteran-Owned Small Business</strong> based in Texas.
+            Our mission is simple: provide affordable, high-quality apparel for men, women, and children without
+            compromising style or comfort.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Quality Promise</h3>
+          <ul>
+            <li>Carefully sourced materials from trusted suppliers</li>
+            <li>Fair, family-friendly pricing</li>
+            <li>Reliable service and honest communication</li>
+            <li>Comfort and durability for everyday life</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Contact</h2>
+        <small>Email • Phone • Social • Hours</small>
+      </div>
+
+      <div class="two">
+        <div class="card">
+          <h3>Get In Touch</h3>
+          <p><strong>Email:</strong> orice@ajebrightglobal.org</p>
+          <p><strong>Phone:</strong> 469-849-8222</p>
+
+          <p style="margin-top:10px;"><strong>Business Hours:</strong></p>
+          <p>Mon–Fri: 9:00 AM – 6:00 PM (CST)</p>
+          <p>Saturday: 10:00 AM – 4:00 PM</p>
+          <p>Sunday: Closed</p>
+
+          <div class="cta">
+            <a class="btn primary" href="mailto:orice@ajebrightglobal.org">Email Us</a>
+            <a class="btn ghost" href="tel:+14698498222">Call Now</a>
+          </div>
+
+          <div class="note">For orders, send: item • size • color • quantity • delivery/pickup.</div>
+        </div>
+
+        <div class="card">
+          <h3>Social Links</h3>
+          <p>Replace the <strong>#</strong> links below with your real social links.</p>
+          <div class="social" style="margin-top:12px;">
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://wa.me/14698498222" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="note">Tip: Add your Instagram handle so customers can DM you easily.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICIES -->
+  <section id="policies" class="section">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Policies</h2>
+        <small>Shipping • Returns • Privacy</small>
+      </div>
+
+      <div class="two">
+        <div class="card">
+          <h3>Shipping Policy</h3>
+          <ul>
+            <li>Orders are processed within <strong>1–3 business days</strong></li>
+            <li>Local delivery/drop-off available in select areas</li>
+            <li>Shipping timelines vary by location</li>
+            <li>Tracking will be provided when available</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Returns & Exchanges</h3>
+          <ul>
+            <li>Accepted within <strong>7 days</strong> of delivery</li>
+            <li>Items must be unused, unworn, and in original condition</li>
+            <li>Return shipping is customer responsibility unless item is damaged/incorrect</li>
+            <li>Exchanges are subject to availability</li>
+          </ul>
+        </div>
+
+        <div class="card" style="grid-column:1/-1;">
+          <h3>Privacy Policy</h3>
+          <ul>
+            <li>We collect only the information needed to fulfill orders and provide support</li>
+            <li>We do <strong>not</strong> sell or share personal information</li>
+            <li>Customer data is handled securely and responsibly</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>© <span id="y"></span> Aje Bright Global LLC • Abebi glem..</div>
+      <div>Veteran-Owned Small Business (U.S. Navy)</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
